@@ -1,0 +1,51 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StaffDirectory.Pages.EmployeeListPage"
+             Title="EmployeeListPage"
+             xmlns:vm="clr-namespace:StaffDirectory.Models.ViewModel"
+             xmlns:models="clr-namespace:StaffDirectory.Models"
+             x:DataType="vm:EmployeesViewModel">
+
+
+
+    <FlexLayout Direction="Column">
+        <Frame Margin="5" Padding ="5" FlexLayout.Basis="600">
+            <VerticalStackLayout Padding="10">
+                <Entry Placeholder ="Employee ID" Text="{Binding Employee.EmployeeID}" />
+                <Entry Placeholder ="Name" Text="{Binding Employee.Name}" />
+                <Entry Placeholder ="Phone" Text="{Binding Employee.Phone}" />
+                <Entry Placeholder ="Department" Text="{Binding Employee.Department}" />
+                <Entry Placeholder ="Address Street" Text="{Binding Employee.AddressStreet}" />
+                <Entry Placeholder ="Address City" Text="{Binding Employee.AddressCity}" />
+                <Entry Placeholder ="Address State" Text="{Binding Employee.AddressState}" />
+                <Entry Placeholder ="Address ZIP" Text="{Binding Employee.AddressZIP}" />
+                <Entry Placeholder ="Address Country" Text="{Binding Employee.AddressCountry}" />
+
+                <Button Text="Add Employee"  Command="{Binding AddCommand}"/>
+                
+            </VerticalStackLayout>
+        </Frame>
+
+        <ListView FlexLayout.Grow="1" ItemsSource="{Binding Employees}" ItemTapped="ListView_ItemTapped" RowHeight="50" x:Name="EmployeeListView">
+            <ListView.Header>
+                <VerticalStackLayout BackgroundColor="DodgerBlue" Padding="5">
+                    <Label HorizontalOptions="Center" Text="Employee List" TextColor="White" FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType = "{x:Type models:Employee}">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Spacing="10" Padding="10"  >
+                            <Label Text="{Binding Name }" VerticalOptions="Center" />
+                            <Button Text="Remove" Margin="5"  BackgroundColor="Blue" Command="{Binding Path=BindingContext.RemoveEmployeeCommand, Source={x:Reference EmployeeListView}}"
+                            CommandParameter="{Binding .}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+                
+        </ListView>
+    </FlexLayout>
+                
+               
+</ContentPage>

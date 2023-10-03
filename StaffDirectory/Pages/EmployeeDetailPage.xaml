@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StaffDirectory.Pages.EmployeeDetailPage"
+             Title="Employee Details"
+             xmlns:vm= "clr-namespace:StaffDirectory.Models.ViewModel"
+             x:DataType="vm:EmployeesViewModel">
+    <TableView Intent="Data">
+    <TableRoot>
+        <TableSection Title="Employee Information">
+                <TextCell Text = "EmployeeID" Detail="{Binding Employee.EmployeeID}"/>
+                <TextCell Text = "EmployeeName" Detail="{Binding Employee.Name}"/>
+                <TextCell Text = "Phone" Detail="{Binding Employee.Phone}"/>
+                <TextCell Text = "Department" Detail="{Binding Employee.Department}"/>
+                <TextCell Text = "AddressStreet" Detail="{Binding Employee.AddressStreet}"/>
+                <TextCell Text = "AddressCity" Detail="{Binding Employee.AddressCity}"/>
+                <TextCell Text = "AddressState" Detail="{Binding Employee.AddressState}"/>
+                <TextCell Text = "AddressZIP" Detail="{Binding Employee.AddressZIP}"/>
+                <TextCell Text = "AddressCountry" Detail="{Binding Employee.AddressCountry}"/>
+            
+        </TableSection>
+   
+    </TableRoot>
+    </TableView>
+</ContentPage>

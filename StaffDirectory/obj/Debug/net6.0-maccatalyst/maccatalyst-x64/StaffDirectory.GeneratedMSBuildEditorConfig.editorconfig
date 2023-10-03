@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StaffDirectory
+build_property.ProjectDir = C:\Users\sma04\source\repos\StaffDirectory\StaffDirectory\
+
+[C:/Users/sma04/source/repos/StaffDirectory/StaffDirectory/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StaffDirectory.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/sma04/source/repos/StaffDirectory/StaffDirectory/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StaffDirectory.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/sma04/source/repos/StaffDirectory/StaffDirectory/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StaffDirectory.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/sma04/source/repos/StaffDirectory/StaffDirectory/Pages/EmployeeDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StaffDirectory.Pages.EmployeeDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EmployeeDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EmployeeDetailPage.xaml
+
+[C:/Users/sma04/source/repos/StaffDirectory/StaffDirectory/Pages/EmployeeListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StaffDirectory.Pages.EmployeeListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EmployeeListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EmployeeListPage.xaml
+
+[C:/Users/sma04/source/repos/StaffDirectory/StaffDirectory/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StaffDirectory.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/sma04/source/repos/StaffDirectory/StaffDirectory/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StaffDirectory.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
