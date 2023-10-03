@@ -37,8 +37,8 @@
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Spacing="10" Padding="10"  >
                             <Label Text="{Binding Name }" VerticalOptions="Center" />
-                            <Button Text="Remove" Margin="5"  BackgroundColor="Blue" Command="{Binding Path=BindingContext.RemoveEmployeeCommand, Source={x:Reference EmployeeListView}}"
-                            CommandParameter="{Binding .}"/>
+                            <!--<Button Text="Remove" Margin="5"  BackgroundColor="Blue" Command="{Binding Path=BindingContext.RemoveEmployeeCommand, Source={x:Reference EmployeeListView}}"-->
+                            <!--CommandParameter="{Binding .}"/>-->
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
